@@ -62,7 +62,7 @@
 
 @media only screen and (max-width: 600px) {
   #header {
-    background-image: url("images/home/home-background-mobile.png");
+    background-image: url("/images/home/home-background-mobile.png");
   }
 
   .header-text h1 {
