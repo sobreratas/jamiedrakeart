@@ -1,0 +1,127 @@
+/* Fiction */
+#fiction-body {
+    background-image: url("images/fiction-website-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .fiction-header-text {
+    width: 70%;
+    margin-bottom: 30px;
+    line-height: 1.5;
+  }
+  .fiction-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .fiction-container h1 {
+    margin: 30px;
+  }
+  
+  .book-cover {
+    min-width: 100%;
+  }
+  
+  .fiction-box-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    gap: 100px;
+  }
+  
+  .fiction-box-container-row-1 {
+    display: flex;
+    justify-content: center;
+    padding: 10px 10%;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  
+  .fiction-box-container-row-1-col-1 {
+    display: flex;
+    justify-content: center;
+    flex-basis: 30%;
+    line-height: 1.5;
+  }
+  
+  .fiction-box-container-row-1-col-1 img {
+    box-shadow: 8px 10px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .fiction-box-container-row-1-col-1 img:hover {
+    box-shadow: 8px 10px 16px 0 rgba(0, 0, 0, 0.4);
+    filter: brightness(85%);
+    transition: 0.3s ease-in-out;
+  }
+  
+  .fiction-box-container-row-1-col-2 {
+    flex-basis: 60%;
+    line-height: 1.5;
+  }
+  
+  .fiction-btns-container {
+    margin-top: 25px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .fiction-btns-container img {
+    width: 150px;
+  }
+  
+  .fiction-btn {
+    display: block;
+    border: 0.5px solid rgb(0, 0, 0);
+    border-radius: 12px;
+  }
+  
+  .fiction-btn:hover {
+    cursor: pointer;
+    filter: brightness(85%);
+    background-color: #e0e0e0;
+    transition: 0.2s ease-in-out;
+  }
+
+  @media only screen and (max-width: 903px) {
+    .fiction-box-container-row-1 {
+        display: flex;
+        gap: 30px;
+      }
+    
+      .fiction-box-container-row-1-col-1 {
+        flex-basis: 100%;
+      }
+    
+      .fiction-box-container-row-1-col-2 {
+        flex-basis: 100%;
+      }
+    
+      .fiction-box-container-row-1-col-1 img {
+        width: 70%;
+      }
+
+      .fiction-box-container-row-1-col-1 {
+        flex-basis: 50%;
+      }
+    
+      .fiction-btns-container {
+        justify-content: center;
+      }
+    
+      .no-write-up {
+    text-align: center;
+      }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .fiction-box-container-row-1-col-1 {
+      flex-basis: 100%;
+    }
+  }

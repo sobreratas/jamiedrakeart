@@ -1,0 +1,102 @@
+/* The Murmurations */
+#murm-body {
+    position: relative;
+    background-image: url("images/murm-website-background-2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .band-logo {
+    width: 40%;
+    margin: 50px 0;
+  }
+  .murm-container {
+    width: 70%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+  
+  .band-text {
+    line-height: 1.5;
+    position: relative;
+  }
+  
+  .background-image {
+    width: 100%;
+    height: 100%;
+    background-image: url("images/murm-logo.png"); /* Replace 'your-image-url.jpg' with your image URL */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    opacity: 50%;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Ensure the background image is behind the content */
+    animation: rotateBackground 60s linear infinite; /* Adjust timing as needed */
+  }
+  
+  @keyframes rotateBackground {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .band-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+  
+  .band-info-container h1 {
+    margin: 30px;
+  }
+  
+  .band-member-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .band-member-card {
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .band-member-card:hover {
+    filter: brightness(85%);
+  }
+  
+  .band-member-card img {
+    width: 300px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+  }
+  
+  .band-member-card p {
+    margin: 8px;
+    font-size: 1.3rem;
+  }
+  
+  .murmurations-music-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }

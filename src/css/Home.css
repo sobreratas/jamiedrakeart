@@ -1,0 +1,77 @@
+.header-text {
+  margin-top: 20%;
+  font-size: 30px;
+  position: relative;
+  left: 0px;
+}
+
+.header-text h1 {
+  font-size: 4rem;
+  margin-top: 20px;
+  position: relative;
+}
+
+.header-text p {
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: var(--font-color);
+  position: relative;
+}
+
+/* Contact */
+#contact {
+  margin-top: 30px;
+}
+.contact-left {
+  flex-basis: 35%;
+}
+
+.contact-right {
+  flex-basis: 60%;
+}
+
+.contact-left p {
+  margin-top: 30px;
+}
+
+.contact-left p i {
+  color: var(--main-color);
+  margin-right: 15px;
+  font-size: 25px;
+}
+
+
+@media only screen and (max-width: 903px) {
+  .header-text h1 {
+    font-size: 30px;
+  }
+
+  .contact-left,
+  .contact-right {
+    flex-basis: 100%;
+  }
+
+  .copyright {
+    font-size: 14px;
+  }
+
+  .credit {
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #header {
+    background-image: url("images/home/home-background-mobile.png");
+  }
+
+  .header-text h1 {
+    font-size: 2.5rem;
+    margin-top: 200px;
+  }
+
+  .header-text p {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+}
