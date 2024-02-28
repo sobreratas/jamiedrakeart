@@ -31,7 +31,7 @@ const Fiction = () => {
   return (
    <>
          <div className="wrapper">
-        <div id="header" className="verse-header">
+        <div id="fiction-body" className="verse-header">
           <div className="container">
             <nav>
               <Link to="/" className="home-logo">

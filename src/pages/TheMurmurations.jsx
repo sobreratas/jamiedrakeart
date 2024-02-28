@@ -32,7 +32,7 @@ const TheMurmurations = () => {
   return (
     <>
       <div className="wrapper">
-        <div id="header" className="murm-header">
+        <div id="murm-body" className="murm-header">
           <div className="container">
             <nav>
               <Link to="/" className="home-logo">

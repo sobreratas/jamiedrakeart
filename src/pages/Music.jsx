@@ -31,7 +31,7 @@ const Music = () => {
   return (
    <>
       <div className="wrapper">
-        <div id="header" className="music-header">
+        <div id="music-body" className="music-header">
           <div className="container">
             <nav>
               <Link to="/" className="home-logo">

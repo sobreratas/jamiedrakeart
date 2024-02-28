@@ -31,7 +31,7 @@ const Verse = () => {
   return (
     <>
       <div id="verse-body">
-        <div id="header" className="verse-header">
+        <div id="verse" className="verse-header">
           <div className="container">
             <nav>
               <Link to="/" className="home-logo">
