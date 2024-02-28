@@ -28,7 +28,7 @@
   .background-image {
     width: 100%;
     height: 100%;
-    background-image: url("images/murmurations/circle-logo.png"); /* Replace 'your-image-url.jpg' with your image URL */
+    background-image: url("/jamiedrakeart/images/murmurations/circle-logo.png"); /* Replace 'your-image-url.jpg' with your image URL */
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
