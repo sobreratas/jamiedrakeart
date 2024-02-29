@@ -32,12 +32,12 @@ function App() {
     <>
       <div className="App">
         <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/history" element={<History />}></Route>
-          <Route path="/music" element={<Music />}></Route>
-          <Route path="/the-murmurations" element={<TheMurmurations />}></Route>
-          <Route path="/fiction" element={<Fiction />}></Route>
-          <Route path="/verse" element={<Verse />}></Route>
+          <Route path="/" element={<Home title={"Jamie Drake Art"}/>}></Route>
+          <Route path="/history" element={<History title={"History"}/>}></Route>
+          <Route path="/music" element={<Music title={"Music"}/>}></Route>
+          <Route path="/the-murmurations" element={<TheMurmurations title={"The Murmurations"}/>}></Route>
+          <Route path="/fiction" element={<Fiction title={"Fiction"}/>}></Route>
+          <Route path="/verse" element={<Verse title={"Verse"}/>}></Route>
         </Routes>
       </div>
     </>

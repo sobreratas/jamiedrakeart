@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Link } from "react-router-dom";
 import { Spotify } from "react-spotify-embed";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -9,7 +9,13 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import "../css/TheMurmurations.css";
 
-const TheMurmurations = () => {
+
+const TheMurmurations = (props) => {
+    //TAB TITLE
+    useEffect(()=> {
+      document.title = props.title;
+    })
+
   //SCROLL TO TOP FUNCTIONALITY
   function scrollToTop() {
     window.scrollTo({
@@ -28,6 +34,7 @@ const TheMurmurations = () => {
   function closeSideBar() {
     sidemenu.style.right = "-200px";
   }
+
 
   return (
     <>
@@ -151,6 +158,7 @@ const TheMurmurations = () => {
             <h1 className="">Music</h1>
             <h2 className="">Kids</h2>
             <p className="">(2022)</p>
+
             <Spotify
               className="spotify-player"
               link="https://open.spotify.com/album/6xMiCEd0KXwfWUlKICo3Yn"

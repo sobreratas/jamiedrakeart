@@ -9,7 +9,14 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import "../css/History.css";
 
-const History = () => {
+const History = (props) => {
+  //TAB TITLE
+  useEffect(()=> {
+    document.title = props.title;
+  })
+
+
+
   const [activeTab, setActiveTab] = useState("early-days");
 
   //SCROLL TO TOP FUNCTIONALITY
@@ -54,7 +61,6 @@ const History = () => {
 
   const setPrevCurrent = () => {
     setCurrent(current === 0 ? images.length - 1 : current - 1);
-    
     const indicators = document.querySelectorAll(".indicator");
     indicators[current].classList.remove("active");
     indicators[current - 1].classList.add("active");
@@ -62,27 +68,17 @@ const History = () => {
 
   const setNextCurrent = () => {
     if (current === images.length - 1) {
-      // nextBtn.classList.add("hidden");
      setCurrent(0);
-      // slideContainer.style.transform = `translateX(-${current * 100}%)`;
-      // indicators[current].classList.add("active");
   } else {
       setCurrent(current + 1);
       const indicators = document.querySelectorAll(".indicator");
       indicators[current].classList.remove("active");
       indicators[current + 1].classList.add("active");
-      // if (current === images.length - 1) {
-      //     nextBtn.classList.add("hidden"); // Hide next button when on second-to-last image
-      // }
-      // prevBtn.classList.remove("hidden"); // Ensure previous button is visible
-      // slideContainer.style.transform = `translateX(-${current * 100}%)`;
-      // indicators[current].classList.add("active");
   }
   };
 
   return (
     <>
-
         <div id="history-body" className="header">
           <div className="container">
             <nav>

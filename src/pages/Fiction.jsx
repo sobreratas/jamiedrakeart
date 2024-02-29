@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -8,7 +8,12 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import "../css/Fiction.css";
 
-const Fiction = () => {
+const Fiction = (props) => {
+    //TAB TITLE
+    useEffect(()=> {
+      document.title = props.title;
+    })
+
     //SCROLL TO TOP FUNCTIONALITY
     function scrollToTop() {
       window.scrollTo({
